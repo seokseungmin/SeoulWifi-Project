@@ -42,6 +42,7 @@
 
 ## ❗DDL
 
+```sql
 CREATE TABLE `wifiinfo` (
 `id` int(11) NOT NULL AUTO_INCREMENT,
 `mgrNo` varchar(50) DEFAULT NULL,
@@ -92,4 +93,4 @@ CREATE TABLE `bookmarkgroup` (
 `updatedAt` timestamp NULL DEFAULT current_timestamp() ON UPDATE current_timestamp(),
 PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=15 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci
-
+```
