@@ -4,6 +4,56 @@
 <html>
 <head>
     <title>북마크 그룹 목록</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
+        th {
+            background-color: #45a049;
+            color: black;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        tr:hover {
+            background-color: #ddd;
+        }
+        .action-link {
+            color: #1a73e8;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        .action-link:hover {
+            text-decoration: underline;
+        }
+    </style>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script>
         function updateBookmarkGroup(id) {
@@ -79,7 +129,7 @@
 <body>
 <h1>북마크 그룹 목록</h1>
 <button onclick="addBookmarkGroup()">북마크 그룹 이름 추가</button>
-<table border="1">
+<table>
     <thead>
     <tr>
         <th>ID</th>
@@ -99,8 +149,8 @@
             <td>${group.createdAt}</td>
             <td>${group.updatedAt}</td>
             <td>
-                <a href="javascript:void(0);" onclick="updateBookmarkGroup(${group.id})">수정</a> |
-                <a href="javascript:void(0);" onclick="deleteBookmarkGroup(${group.id})">삭제</a>
+                <a href="javascript:void(0);" class="action-link" onclick="updateBookmarkGroup(${group.id})">수정</a> |
+                <a href="javascript:void(0);" class="action-link" onclick="deleteBookmarkGroup(${group.id})">삭제</a>
             </td>
         </tr>
     </c:forEach>
