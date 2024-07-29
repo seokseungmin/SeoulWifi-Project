@@ -6,7 +6,7 @@
 🏙️ [**서울공공 와이파이 API**](https://data.seoul.go.kr/dataList/OA-20883/S/1/datasetView.do) <br>
 📹 [**프로젝트 시연 영상**](https://youtu.be/2O3NiKBiteI)
 
-![Front-end](https://skillicons.dev/icons?i=idea,java,maven,spring,git)<br>
+![Front-end](https://skillicons.dev/icons?i=idea,java,maven,git)<br>
 
 ## ⚙ 기술 스택
 - **🖥️ 언어:** Java
