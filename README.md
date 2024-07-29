@@ -4,7 +4,7 @@
 
 📹 [**프로젝트 시연 영상**](https://youtu.be/2O3NiKBiteI)
 
-![Front-end](https://skillicons.dev/icons?i=idea,java,gradle,spring,git)<br>
+![Front-end](https://skillicons.dev/icons?i=idea,java,maven,spring,git)<br>
 
 ## ⚙ 기술 스택
 - **🖥️ 언어:** Java
